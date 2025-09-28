@@ -79,3 +79,13 @@ form button {
     margin-top: 1rem;
     border: none;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.ads img {
+    width: 100%;
+}

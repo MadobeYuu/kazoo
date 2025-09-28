@@ -5,7 +5,7 @@
     <%- include("header.ejs") -%>
     <main>
         <div class="wrapper">
-            <% products.forEach((product)=> { -%>
+            <% products.forEach((product) => { %>
                 <div class="ads">
                     <h3>
                         <%= product.title %>
@@ -13,7 +13,9 @@
                     <p>
                         <%= product.desc %>
                     </p>
+                    <img src="/uploads/<%= product.image %>" alt="">
                 </div>
+            <% }) %> <!-- Важливо -->
         </div>
         <%- include("modal.ejs") -%>
     </main>
